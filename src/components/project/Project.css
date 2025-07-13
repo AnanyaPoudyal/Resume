@@ -1,0 +1,39 @@
+.design{
+    color: #000000;
+    margin: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.design h1{
+    font-size: 3.5rem;
+}
+.pro-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+.pro-card{
+      border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pro-card img {
+  width: 100%;
+  height: 500px; /* you can adjust this height */
+  object-fit: contain; /* shows full image without cropping */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9; 
+}
+
+.pro-card p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
